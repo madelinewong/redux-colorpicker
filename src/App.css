@@ -1,0 +1,12 @@
+.div1 {
+    margin-left: 400px;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black; 
+    display: inline-block; 
+}
+
+.div2 {
+    margin-top: 525px;
+    margin-left: 225px;
+}
