@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import { SketchPicker } from 'react-color';
 import './App.css';
 import { connect } from "react-redux";
 
 const picker = document.querySelector('#picker');
 
-function changeBoxColor(e){
-  const element = e.target;
-  element.style.backgroundColor = picker.value;
-};
+// handleOnChange 
+// function changeBoxColor(e){
+//   const element = e.target;
+//   element.style.backgroundColor = picker.value;
+// };
 class App extends Component {
   render() {
     return (
