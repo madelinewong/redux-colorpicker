@@ -14,24 +14,26 @@ export const changeColor = (color) => ({
 //inital state
 
 const initalState = {
-  color: "white"
+  color: "color"
 };
 
 //reducer 
-const colorReducer = (state=initalState, action) => {
+const reducer = (state=initalState, action) => {
   console.log(action);
   switch(action.type){
     case "CHANGE_COLOR": 
     return {
       ...state, 
-      color: state.color
+      color: action.payload.value
     };
+    default: 
+      return state;
   }
 }
 
   //creation of the store
   const store = createStore(
-    // countReducer, 
+    reducer, 
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   );
 
