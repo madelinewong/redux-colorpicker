@@ -4,13 +4,7 @@ import './App.css';
 import { actions } from './store.js';
 import { connect } from "react-redux";
 
-// const picker = document.querySelector('#picker');
 
-// handleOnChange 
-// function changeBoxColor(e){
-//   const element = e.target;
-//   element.style.backgroundColor = picker.value;
-// };
 class App extends Component {
 
   handleChange(color, event) {
@@ -27,4 +21,9 @@ console.log(color, event);
   }
 }
 
+//mapstatetoprops
+
+//mapdispatchtoprops
+
+//wrap the app in connect
 export default App;

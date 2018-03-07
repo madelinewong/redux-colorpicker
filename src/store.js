@@ -23,13 +23,11 @@ const colorReducer = (state=initalState, action) => {
   switch(action.type){
     case "CHANGE_COLOR": 
     return {
-      ...state,
-      color: state.changeColor 
-    }
-  default:
-  return state
+      ...state, 
+      color: state.color
+    };
   }
-};
+}
 
   //creation of the store
   const store = createStore(
