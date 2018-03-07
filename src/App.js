@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { SketchPicker } from 'react-color';
+import { SwatchesPicker } from 'react-color';
 import './App.css';
+import { actions } from './store.js';
 import { connect } from "react-redux";
 
-const picker = document.querySelector('#picker');
+// const picker = document.querySelector('#picker');
 
 // handleOnChange 
 // function changeBoxColor(e){
@@ -11,12 +12,16 @@ const picker = document.querySelector('#picker');
 //   element.style.backgroundColor = picker.value;
 // };
 class App extends Component {
+
+  handleChange(color, event) {
+console.log(color, event);
+  }
   render() {
     return (
+      <div>
       <div className="div1">
-      <div className="div2">
-        <input type="color"/>
-      </div> 
+      </div>
+      <SwatchesPicker onChange={ this.handleChange } />
       </div>
     );
   }
